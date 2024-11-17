@@ -40,4 +40,7 @@ export default function Hero() {
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-100 rounded-full filter blur-3xl opacity-50"></div>
           </div>
         </div>
-     
+      </div>
+    </section>
+  );
+}
