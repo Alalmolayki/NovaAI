@@ -30,7 +30,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl">
               <img 
-                src="/ai-demo.pngA sample website was created." 
+                src="/ai-demo.png" 
                 alt="NovaAI otobüs tanıma sistemi demo" 
                 className="w-full h-auto"
               />
