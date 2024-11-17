@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 640px) {
+  h2 {
+    @apply text-3xl;
+  }
+  
+  .container {
+    @apply px-4;
+  }
+}
+
+/* Improve focus visibility for accessibility */
+*:focus {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+/* Ensure sufficient color contrast */
+body {
+  @apply text-gray-900;
+  line-height: 1.5;
+}
+
+/* Make text more readable */
+p {
+  @apply text-base leading-relaxed;
+}
+
+/* Improve link accessibility */
+a {
+  @apply underline-offset-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none;
+}
+
+/* Code block styling */
+pre {
+  @apply rounded-lg;
+  background-color: #1a1a1a;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+}
+
+/* Mobile menu improvements */
+@media (max-width: 768px) {
+  .mobile-menu {
+    @apply fixed inset-0 bg-gray-900 bg-opacity-50 z-50;
+  }
+  
+  .mobile-menu-content {
+    @apply bg-white p-4 rounded-t-2xl fixed bottom-0 left-0 right-0;
+  }
+}
